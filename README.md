@@ -7,8 +7,8 @@ This project focuses on the recognition of Indian Sign Language (ISL) using mach
 
 - [Dataset](#dataset)
 - [Notebooks](#notebooks)
-  - [Continued training.ipynb](#continued-trainingipynb)
   - [word_level.ipynb](#word_levelipynb)
+  - [Continued training.ipynb](#continued-trainingipynb)
 - [Streamlit App](#streamlit-app)
   - [Project_Overview.py](#project_overviewpy)
   - [01ISL-Translator.py](#01isl-translatorpy)
