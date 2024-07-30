@@ -26,6 +26,9 @@ The dataset consists of images and videos of various sign language gestures used
 
 ## Notebooks
 
+![image](https://github.com/user-attachments/assets/55f49f5d-cece-4952-821e-e74764648a77)
+
+
 ### Continued training.ipynb
 
 This notebook focuses on the continued training of a pre-trained model on the ISL dataset. It includes the following sections:
@@ -49,6 +52,9 @@ This notebook focuses on word-level recognition in ISL. It includes the followin
 
 ## Streamlit App
 
+![WhatsApp Image 2024-07-30 at 11 56 13_c285ae04](https://github.com/user-attachments/assets/13494ead-8a67-48fa-8ee1-e4664dc073d5)
+
+
 ### Project_Overview.py
 
 This script provides an overview of the ISL recognition project. It includes sections on the project's motivation, dataset, and model architecture.
@@ -64,6 +70,9 @@ This script provides metrics and visualizations for the ISL recognition model. I
 ## Saved Models
 
 The following models are trained models on the dataset:
+
+![image](https://github.com/user-attachments/assets/2e60aeed-7e36-4b83-9617-2739270152e0)
+
 
 - `model2_updated_again0.h5`
 - `model2_updated_again1.h5`
