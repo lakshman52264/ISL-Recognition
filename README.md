@@ -119,9 +119,6 @@ streamlit run <script_name>.py
 
 Replace `<script_name>` with the appropriate script name (`Project_Overview.py`, `01ISL-Translator.py`, or `02Metrics.py`).
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
