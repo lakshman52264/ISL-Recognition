@@ -1,43 +1,132 @@
-This project presents an innovative approach to Indian Sign Language (ISL) recognition, tailored to accommodate the diverse regional languages of India. Leveraging a Convolutional Neural Network (CNN)-based architecture, the system aims to interpret and translate ISL gestures accurately across various linguistic contexts, addressing the unique challenges posed by India's linguistic diversity.
 
-Methodology
-The proposed system employs a robust CNN model to process image sequences of sign language gestures, extracting spatial and temporal features for precise gesture classification. The architecture integrates several key components:
+# ISL Recognition Project
 
-Image Preprocessing and Feature Extraction:
+This project focuses on the recognition of Indian Sign Language (ISL) using machine learning and deep learning techniques. The dataset used for this project can be found at [Mendeley Data](https://data.mendeley.com/datasets/kcmpdxky7p/1).
 
-MediaPipe: Utilized for hand keypoint detection, capturing detailed hand movements.
-MobileNetV2: Employed for high-level feature extraction, focusing on intricate gesture details.
-Dimensionality Reduction:
+## Table of Contents
 
-Principal Component Analysis (PCA): Applied to reduce the dimensionality of the extracted features, ensuring efficient processing.
-Gesture Recognition:
+- [Dataset](#dataset)
+- [Notebooks](#notebooks)
+  - [Continued training.ipynb](#continued-trainingipynb)
+  - [word_level.ipynb](#word_levelipynb)
+- [Streamlit App](#streamlit-app)
+  - [Project_Overview.py](#project_overviewpy)
+  - [01ISL-Translator.py](#01isl-translatorpy)
+  - [02Metrics.py](#02metricspy)
+- [Saved Models](#saved-models)
+- [Setup](#setup)
+- [Contributing](#contributing)
+- [License](#license)
 
-Long Short-Term Memory (LSTM) Networks: Used to recognize gestures by analyzing the temporal sequences of the extracted features.
-Diagram illustrating the methodology:
+## Dataset
 
+The dataset used in this project is provided by Mendeley Data and can be accessed at the following link: [Indian Sign Language Dataset](https://data.mendeley.com/datasets/kcmpdxky7p/1).
 
-![image](https://github.com/user-attachments/assets/48840817-6e7a-4529-a3ad-d9e1b3ba16b0)
+The dataset consists of images and videos of various sign language gestures used in Indian Sign Language.
 
-Architecture of Model
+## Notebooks
 
-Experimental Results
-The system demonstrates high accuracy and efficiency in word-level gesture recognition, achieving 80-85% accuracy. However, it exhibits only mediocre accuracy in sentence-level gesture recognition, underscoring the complexity of contextual interpretation in sign language.
+### Continued training.ipynb
 
-Significance and Future Directions
-Despite the challenges, this research underscores the potential of CNN-based architectures in bridging communication gaps for the deaf and hard-of-hearing communities in multilingual settings. The study highlights several future directions to enhance the system:
+This notebook focuses on the continued training of a pre-trained model on the ISL dataset. It includes the following sections:
 
-Expanding the Training Dataset:
+1. **Data Preprocessing**: Loading and preprocessing the dataset for training.
+2. **Model Architecture**: Defining the architecture of the deep learning model.
+3. **Training**: Training the model with the dataset.
+4. **Evaluation**: Evaluating the model's performance on the test set.
+5. **Fine-Tuning**: Fine-tuning the model for improved accuracy.
 
-Including diverse ISL gestures from various regions and dialects.
-Collaborating with linguistic experts and the deaf community for comprehensive gesture coverage.
-Model Optimization:
+### word_level.ipynb
 
-Reducing computational requirements to enhance real-time processing capabilities.
-Integrating Multimodal Inputs:
+This notebook focuses on word-level recognition in ISL. It includes the following sections:
 
-Incorporating facial expressions and body movements to improve recognition accuracy.
-Developing Cross-Platform Solutions:
+1. **Data Loading**: Loading the dataset for word-level recognition.
+2. **Feature Extraction**: Extracting features from the dataset.
+3. **Model Building**: Building the machine learning model for word-level recognition.
+4. **Training**: Training the model with the extracted features.
+5. **Evaluation**: Evaluating the model's performance on the test set.
+6. **Results Visualization**: Visualizing the results of the model.
 
-Creating mobile applications and wearable devices for wider accessibility.
-Conclusion
-This project marks a significant step towards creating inclusive communication tools that respect and reflect India's linguistic diversity. By addressing the outlined future directions, the system aims to build on its current foundation, making substantial strides towards a universally accessible and highly accurate ISL recognition and translation system.
+## Streamlit App
+
+### Project_Overview.py
+
+This script provides an overview of the ISL recognition project. It includes sections on the project's motivation, dataset, and model architecture.
+
+### 01ISL-Translator.py
+
+This script implements the ISL Translator application. It allows users to upload images or videos of ISL gestures and get predictions for the corresponding signs. The application uses a pre-trained model to make predictions.
+
+### 02Metrics.py
+
+This script provides metrics and visualizations for the ISL recognition model. It includes sections for evaluating the model's performance and visualizing various metrics.
+
+## Saved Models
+
+The following models are trained models on the dataset:
+
+- `model2_updated_again0.h5`
+- `model2_updated_again1.h5`
+- `model2_updated_again2.h5`
+- `model2_updated_again3.h5`
+- `model2_updated_again4.h5`
+
+These models are saved in the HDF5 format and can be loaded for making predictions in the Streamlit app or for further training.
+
+## Setup
+
+To run the notebooks and Streamlit app, you need to have the following dependencies installed:
+
+- Python 3.x
+- Jupyter Notebook
+- TensorFlow
+- Keras
+- OpenCV
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- Streamlit
+
+You can install the dependencies using the following command:
+
+```bash
+pip install tensorflow keras opencv-python numpy pandas matplotlib scikit-learn streamlit
+```
+
+## Usage
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
+
+2. Download the dataset from [Mendeley Data](https://data.mendeley.com/datasets/kcmpdxky7p/1) and place it in the `data` directory.
+
+3. Open the notebooks using Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+4. To run the Streamlit app, use the following command:
+
+```bash
+streamlit run <script_name>.py
+```
+
+Replace `<script_name>` with the appropriate script name (`Project_Overview.py`, `01ISL-Translator.py`, or `02Metrics.py`).
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Feel free to modify this README file as per your specific project requirements.
