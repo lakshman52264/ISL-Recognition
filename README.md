@@ -15,7 +15,6 @@ This project focuses on the recognition of Indian Sign Language (ISL) using mach
   - [02Metrics.py](#02metricspy)
 - [Saved Models](#saved-models)
 - [Setup](#setup)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Dataset
@@ -25,19 +24,6 @@ The dataset used in this project is provided by Mendeley Data and can be accesse
 The dataset consists of images and videos of various sign language gestures used in Indian Sign Language.
 
 ## Notebooks
-
-![image](https://github.com/user-attachments/assets/55f49f5d-cece-4952-821e-e74764648a77)
-
-
-### Continued training.ipynb
-
-This notebook focuses on the continued training of a pre-trained model on the ISL dataset. It includes the following sections:
-
-1. **Data Preprocessing**: Loading and preprocessing the dataset for training.
-2. **Model Architecture**: Defining the architecture of the deep learning model.
-3. **Training**: Training the model with the dataset.
-4. **Evaluation**: Evaluating the model's performance on the test set.
-5. **Fine-Tuning**: Fine-tuning the model for improved accuracy.
 
 ### word_level.ipynb
 
@@ -49,6 +35,18 @@ This notebook focuses on word-level recognition in ISL. It includes the followin
 4. **Training**: Training the model with the extracted features.
 5. **Evaluation**: Evaluating the model's performance on the test set.
 6. **Results Visualization**: Visualizing the results of the model.
+
+### Continued training.ipynb
+
+This notebook focuses on the continued training of a pre-trained model on the ISL dataset -word_level.ipynb. It includes the following sections:
+
+1. **Data Preprocessing**: Loading and preprocessing the dataset for training.
+2. **Model Architecture**: Defining the architecture of the deep learning model.
+3. **Training**: Training the model again with the augmented dataset .
+4. **Evaluation**: Evaluating the model's performance on the test set.
+5. **Fine-Tuning**: Fine-tuning the model for improved accuracy.
+
+
 
 ## Streamlit App
 
